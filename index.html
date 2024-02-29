@@ -7,13 +7,25 @@
 </head>
 <body>
 	<p>some text</p>
-	<svg width="500" height="500">
-		<circle cx="100" cy="100" r="50" />
+	<svg width="500" height="500" id="svgElement">
+		<rect id="rectSvg" x="100" y="100" height="100" width="300" style="fill:red;"/>
 	</svg>
+
+	<div contenteditable="" id="">anurag</div>
 </body>
 <style>
 	svg {
 		border : 1px solid black;
 	}
 </style>
+<script>
+
+	const svgEl = document.getElementById("svgElement");
+	svgEl.addEventListener("mouseover", () => console.log("hello"));
+	svgEl.addEventListener("click", () => console.log('click'))
+	svgEl.addEventListener("dragstart", () => console.log('dragstart'))
+
+	const rectSvg = document.getElementById("rectSvg");
+	rectSvg.addEventListener("click", () => console.log("rectangle click"));
+</script>
 </html>

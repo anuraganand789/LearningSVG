@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SVG Test</title>
+</head>
+<body>
+	<p>some text</p>
+	<svg width="500" height="500">
+		<svg>
+			<path d="M150,150 A100,50 0 0,1 150, 300" 
+				style="stroke: blue; stroke-width: 2; fill:none; "/>
+			<path d="M150,150 A100,50 0 0,0 150, 300" 
+				style="stroke: red; stroke-width: 2; fill:none; "/>
+		</svg >
+	</svg>
+</body>
+<style>
+	svg {
+		border : 1px solid black;
+	}
+</style>
+</html>
